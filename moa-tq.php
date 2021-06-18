@@ -26,6 +26,7 @@ class MOA_TQ{
 
 		if(is_post_type_archive('product'))
 		{
+			return;
 			if(!is_admin() && $query->is_main_query()){
 //				$query->set('product_cat', 'BIKES,chains-and-accessories');
 				$query->set('tax_query',array(
